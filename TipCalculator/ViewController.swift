@@ -46,6 +46,12 @@ class ViewController: UIViewController {
         resultsTextView.text = results
     }
     
+    //textbox onTouch listener
+    @IBAction func totalTextBoxPressed(sender : AnyObject) {
+        totalTextField.text = ""
+        resultsTextView.text = ""
+    }
+    
     //slider listener
     @IBAction func taxPercentageChanged(sender : AnyObject) {
         tipCalc.taxPct = Double(taxPctSlider.value) / 100.0
